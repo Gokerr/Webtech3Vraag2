@@ -14,7 +14,7 @@ public class MedicijnApplication extends Application {
 
         // Defines only one route
         router.attach("/medicijn", MedicijnResource.class);
-
+        router.attach("/medicijn/{medi}",SearchResource.class);
         return router;
 		
 		
